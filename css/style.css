@@ -164,17 +164,65 @@ p {
 #flowers header {
   text-align: center;
 }
+#flowers h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 3.125em;
+  padding-top: 70px;
+}
+#flowers p {
+  font-weight: bold;
+}
 #flowers section {
   width: 1080px;
 }
-#flower-galleri {
-}
 
+#flower-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
 #large {
   width: 714px;
+  grid-column: 1 / 5;
+  grid-row: 1 / 5;
 }
+
 .small {
   width: 168px;
+}
+#flower0 {
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+}
+#flower1 {
+  grid-column: 6 / 7;
+  grid-row: 1 / 2;
+}
+#flower2 {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+#flower3 {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+#flower4 {
+  grid-column: 5 / 6;
+  grid-row: 3 / 4;
+}
+#flower5 {
+  grid-column: 6 / 7;
+  grid-row: 3 / 4;
+}
+#flower6 {
+  grid-column: 5 / 6;
+  grid-row: 4 / 5;
+}
+#flower7 {
+  grid-column: 6 / 7;
+  grid-row: 4 / 5;
 }
 /*       questions*/
 /*       contact*/
