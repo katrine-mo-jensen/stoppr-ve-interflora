@@ -156,6 +156,26 @@ p {
   font-size: 1.5625em;
 }
 /*       flowers*/
+#flowers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#flowers header {
+  text-align: center;
+}
+#flowers section {
+  width: 1080px;
+}
+#flower-galleri {
+}
+
+#large {
+  width: 714px;
+}
+.small {
+  width: 168px;
+}
 /*       questions*/
 /*       contact*/
 /*       footer*/
