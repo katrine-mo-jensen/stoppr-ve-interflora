@@ -1,3 +1,4 @@
+//Gallery
 let large = document.getElementById("large");
 let small = document.getElementsByClassName("small");
 
@@ -10,3 +11,9 @@ for (let index = 0; index < small.length; index++) {
     large.src = event.target.src;
   });
 }
+// Accordion
+const fold-out = document.querySelector("fold-out")
+
+fold-out.addEventListener('click', () => {
+    div.classList.toggle("visible");
+  })

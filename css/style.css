@@ -225,5 +225,11 @@ p {
   grid-row: 4 / 5;
 }
 /*       questions*/
+.fold-out {
+  display: none;
+}
+.visible {
+  display: block;
+}
 /*       contact*/
 /*       footer*/
