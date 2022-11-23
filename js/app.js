@@ -12,8 +12,3 @@ for (let index = 0; index < small.length; index++) {
   });
 }
 // Accordion
-const fold-out = document.querySelector("fold-out")
-
-fold-out.addEventListener('click', () => {
-    div.classList.toggle("visible");
-  })
