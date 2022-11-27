@@ -211,14 +211,14 @@
       </div>
       <!-------------questions-->
 
-      <h2>Ofte stillede spørgsmål</h2>
       <section class="questions">
+        <h2>Ofte stillede spørgsmål</h2>
         <div class="faq-list">
-          <header class="faq-header">
+          <header>
             <h4>Jeg vil gerne købe blomster i abonnement</h4>
             <button>Vis mere</button>
           </header>
-          <article class="fold-out">
+          <article>
             <p>
               1. Vælg abonnement på www.interflora.dk/abonnement: Du kan vælge
               mellem forskellige abonnementstyper, afhængig af, om du bestiller
@@ -237,15 +237,13 @@
             </p>
           </article>
         </div>
-      </section>
 
-      <section class="questions">
         <div class="faq-list">
-          <header class="faq-header">
+          <header>
             <h4>Hvordan opretter jeg en brugerprofil på Interflora.dk?</h4>
             <button>Vis mere</button>
           </header>
-          <article class="fold-out">
+          <article>
             <p>
               Du kan oprette profil ved at klikke på ”Opret profil” . Så følger
               du blot de forskellige trin – det er nemt og hurtigt. Du kan også
@@ -254,30 +252,26 @@
             </p>
           </article>
         </div>
-      </section>
 
-      <section class="questions">
         <div class="faq-list">
-          <header class="faq-header">
+          <header>
             <h4>Hvordan logger jeg ind?</h4>
             <button>Vis mere</button>
           </header>
-          <article class="fold-out">
+          <article>
             <p>
               Du skal bruge dit login (din e-mail) og et kodeord, du selv
               vælger. Du kan bruge dette link.
             </p>
           </article>
         </div>
-      </section>
 
-      <section class="questions">
         <div class="faq-list">
-          <header class="faq-header">
+          <header>
             <h4>Kan jeg bestille uden at være logget ind?</h4>
             <button>Vis mere</button>
           </header>
-          <article class="fold-out">
+          <article>
             <p>
               Ja, det kan du godt. Hvis du køber et abonnement, bliver der
               automatisk oprettet en profil, som giver dig mulighed for at
@@ -290,33 +284,38 @@
       <!-------------Contact-->
       <section id="contact">
         <header>
-          <h4>Kontakt</h4>
-          <p></p>
+          <h5>Kontakt</h5>
+          <p>
+            Har du spørgsmål er du altid velkommen til at kontakte os, og vi vil
+            gøre vores bedste, for at hjælpe dig.
+          </p>
         </header>
-        <form>
-          <input type="name" placeholder="Navn" />
-          <input type="subject" placeholder="Emne" />
-          <input type="email" placeholder="E-mail" />
-          <input type="current school" placeholder="Din ansøgning" />
-          <button>Send</button>
+        <form onsubmit="return false;" name="contact">
+          <input type="text" placeholder="Navn" name="contactName" />
+          <input type="text" placeholder="Emne" name="contactSubject" />
+          <input type="email" placeholder="E-mail" name="contactEmail" />
+          <textarea name="contactText" placeholder="Din ansøging "></textarea>
+          <button onclick="validate()">Send</button>
         </form>
       </section>
     </main>
     <!-------------footer-->
     <footer>
-      <section>
-        <h5>Interflora Danmark A/S</h5>
-        <p>
-          Park Allé 380 2625 Vallensbæk Administration: 43 43 47 47 E-mail:
-          interflora@interflora.dk
-        </p>
-      </section>
       <div>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-solid fa-phone"></i>
+        <article>
+          <h6>Interflora Danmark A/S</h6>
+          <p>Park Allé 380</p>
+          <p>2625 Vallensbæk</p>
+          <p>Administration: 43 43 47 47</p>
+          <p>E-mail: interflora@interflora.dk</p>
+        </article>
+        <section>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-solid fa-phone"></i>
+        </section>
       </div>
     </footer>
   </body>
