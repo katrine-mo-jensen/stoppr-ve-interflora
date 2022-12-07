@@ -301,7 +301,7 @@ h1 {
   text-align: center;
   padding-bottom: 64px;
 }
-form {
+#contact form {
   width: auto;
   max-width: 1080px;
   margin: 0 auto;
@@ -310,20 +310,27 @@ form {
   grid-template-rows: 48px 48px 48px 48px;
   gap: 32px;
 }
-textarea,
-input {
+#contact form textarea,
+#contact form input {
   border: 2px solid #191919;
 }
-
-form ::placeholder {
+/*Fjernes ved calidering 1*/
+#contact form input.error {
+  border: 2px solid red;
+}
+/*Fjernes ved calidering 1*/
+#contact form input.valid {
+  border: 2px solid green;
+}
+#contact form ::placeholder {
   padding-left: 16px;
   padding-top: 10px;
 }
-textarea {
+#contact form textarea {
   grid-column: 2 / 3;
   grid-row: 1 / 4;
 }
-form button {
+#contact form button {
   grid-column: 1 / 3;
   background-color: black;
   color: white;

@@ -21,11 +21,52 @@ for (let index = 0; index < btns.length; index++) {
   });
 }
 
-// Contact
+// Validating 1
+/*
 function validate(event) {
   const form = document.forms["contact"];
 
-  if (form[0].value != "" && form[0].value.length < 10) {
+  if (form[0].value === "") {
     alert("Fejl");
   }
 }
+*/
+// Validating 2
+const contactForm = document.forms["contact"];
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const inputName = contactForm["contactName"];
+  const inputSubject = contactForm["contactSubject"];
+  const inputEmail = contactForm["contactEmail"];
+  const inputText = contactForm["contactText"];
+
+  if (inputName.value != "" && inputName.value.length > 3) {
+    inputName.classList.remove("error");
+    inputName.classList.add("valid");
+  } else {
+    inputName.classList.add("error");
+    inputName.classList.remove("valid");
+  }
+
+  if (inputSubject.value != "" && inputSubject.value.length > 3) {
+    inputSubject.classList.remove("error");
+    inputSubject.classList.add("valid");
+  } else {
+    inputSubject.classList.add("error");
+    inputSubject.classList.remove("valid");
+  }
+
+  if (
+    inputEmail.value != "" &&
+    inputEmail.value.length > 3 &&
+    inputEmail.value.includes("@")
+  ) {
+    inputEmail.classList.remove("error");
+    inputEmail.classList.add("valid");
+  } else {
+    inputEmail.classList.add("error");
+    inputEmail.classList.remove("valid");
+  }
+});

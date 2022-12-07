@@ -290,12 +290,14 @@
             gøre vores bedste, for at hjælpe dig.
           </p>
         </header>
-        <form onsubmit="return false;" name="contact">
+        <!---- <form onsubmit="return false;" name="contact">  til validering 1--->
+        <form name="contact">
           <input type="text" placeholder="Navn" name="contactName" />
           <input type="text" placeholder="Emne" name="contactSubject" />
-          <input type="email" placeholder="E-mail" name="contactEmail" />
+          <input type="text" placeholder="E-mail" name="contactEmail" />
           <textarea name="contactText" placeholder="Din ansøging "></textarea>
-          <button onclick="validate()">Send</button>
+          <button>Send</button>
+          <!-----<button onclick="validate()">Send</button> til validering 1--->
         </form>
       </section>
     </main>
